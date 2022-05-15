@@ -1,0 +1,134 @@
+/* .container {
+    max-width: 960px;
+    margin: 50px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: space-evenly;
+     align-items: center;
+     grid-template-rows: repeat(3, 100px); 
+     grid-auto-rows: minmax(200px, auto); 
+} */
+
+/* .item {
+    background: slateblue;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 20px;
+    border: darkblue 2px solid;
+    align-self: flex-start;
+} */
+
+/* .item:nth-of-type(1) {
+    background: brown;
+    grid-column: 1/span 2;
+    grid-row: 1/span 4;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+} */
+
+/* @media(max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+} */
+
+/* CSS Grid */
+
+/* * {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'nav content sidebar'
+    'nav footer footer';
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: 80px 1fr 80px;
+}
+
+header, footer, main, aside, nav {
+    background-color: slateblue;
+    color: white;
+    padding: 20px;
+    border: skyblue 1px solid;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+nav {
+    grid-area: nav;
+    background-color: blueviolet;
+}
+
+main {
+    grid-area: content;
+    background-color: antiquewhite;
+    color: black;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media(max-width: 640px) {
+    body {
+        grid-template-areas: 
+        'header . .'
+        'content . .'
+        'footer . .';
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 80px;
+    }
+} */
+
+/* FlexBox */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-size: 10px; */
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;    
+}
+
+.flex-container {
+    display: flex;
+    background: lightgray;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 10px;
+
+}
+
+.item {
+    flex: 1;
+    height: 100px;
+    background: steelblue;
+    font-size: 2em;
+    color: white;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
